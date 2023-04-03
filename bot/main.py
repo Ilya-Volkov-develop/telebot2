@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, executor, types
 
 load_dotenv()
-# PROXY_URL = "http://proxy.server:3128"
-bot = Bot(token=os.environ.get('BOT_API_TOKEN'))#, proxy=PROXY_URL)
+PROXY_URL = "http://proxy.server:3128"
+bot = Bot(token=os.environ.get('BOT_API_TOKEN'), proxy=PROXY_URL)
 dp = Dispatcher(bot)
 
 
