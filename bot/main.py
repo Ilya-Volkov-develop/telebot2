@@ -11,7 +11,7 @@ dp = Dispatcher(bot)
 
 
 #start
-@dp.message_handler(commands=['start'])
+@dp.message_handler(commands=['start', 'c'])
 async def started_message(message: types.Message):
     await message.answer(text=messages.hello(), reply_markup=keyboards.MAIN_BTNS)
 
